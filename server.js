@@ -5,7 +5,7 @@ const exphbs = require('express-handlebars');
 const routes = require('./Main/controllers');
 const helpers = require('./Main/utils/helpers');
 
-const sequelize = require('./Main/config/connection');
+const sequelize = require('./TechBlog/config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
