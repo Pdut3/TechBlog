@@ -6,7 +6,7 @@ class Comment extends Model {}
 Comment.init(
   {
     body: {
-      type: DataTypes.FLOAT,
+      type: DataTypes.TEXT,
       allowNull: false,
     },
     user_id: {
