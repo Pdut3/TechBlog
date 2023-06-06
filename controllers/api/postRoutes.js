@@ -12,6 +12,7 @@ router.post('/', withAuth, async (_req, res) => {
 });
 
 router.delete('/:id', withAuth, async (req, res) => {
+  console.log("first post");
   try {
     const postData = await Post.destroy({
       where: {
